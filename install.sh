@@ -210,7 +210,10 @@ if [ "$EXTERNAL" = 1 ]; then
     subdir="${subdir%$'\r'}"; layout="${layout%$'\r'}"
     [ -z "$name" ] && continue
     case "$name" in \#*) continue ;; esac
-    selected "$name" || continue
+    # layout=repo 时 source 名就是 skill 名；tree 时由子目录名过滤
+    if [ "$layout" = "repo" ]; then
+      selected "$name" || continue
+    fi
 
     if ! command -v git >/dev/null 2>&1; then
       warn "未找到 git，跳过外部 skill $name"
