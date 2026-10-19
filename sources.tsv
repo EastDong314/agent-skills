@@ -1,0 +1,11 @@
+# 外部 GitHub skill 来源（制表符分隔）
+# 字段: name <TAB> repo <TAB> ref(SHA/tag/branch) <TAB> subdir <TAB> layout
+#   layout=repo  : 整个仓库就是一个 skill（SKILL.md 在 subdir 根）
+#   layout=tree  : subdir 下每个含 SKILL.md 的子目录是一个 skill
+# 以 # 开头的行和空行会被忽略。
+#
+# book-to-skill: 第三方（MIT），仓库 5MB，故不 vendoring，按固定 commit 克隆安装。
+book-to-skill	https://github.com/virgiliojr94/book-to-skill.git	526f362552562d88c1a8bbf8012d2cee93f831d5	.	repo
+
+# 可选：工作流 skill 也直接跟上游（默认用本仓库快照，取消注释即改为上游最新/固定版本）
+# workflow-kit	https://github.com/EastDong314/AI-Project-Workflow-Template.git	50542c77cbf683e822dfb53d3eecd9f2a2864dde	skills	tree

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Plan Acceptance"
+  short_description: "Create implementation-ready goal, plan, and acceptance artifacts."
+  default_prompt: "Use $workflow-plan-acceptance to turn this task into executable GOAL, PLAN, and ACCEPTANCE files before implementation."

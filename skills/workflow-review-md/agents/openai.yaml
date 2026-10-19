@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Review"
+  short_description: "Review the real diff against plan, acceptance, and validation evidence."
+  default_prompt: "Use $workflow-review-md to review the current implementation against the workflow files, diff, and validation evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Implement"
+  short_description: "Implement the approved task from the active workflow files."
+  default_prompt: "Use $workflow-implement to execute the approved task from the current workflow files and update IMPLEMENTATION_LOG.md."

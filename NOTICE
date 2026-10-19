@@ -1,0 +1,29 @@
+Third-party notices
+===================
+
+This repository is MIT-licensed (see LICENSE). It also contains or installs
+third-party material:
+
+1. ponytail-review
+   - Derived from `DietrichGebert/ponytail` (MIT).
+   - Upstream: https://github.com/dietrichgebert/ponytail
+   - Copyright (c) 2026 DietrichGebert
+   - Full license text: THIRD-PARTY/ponytail-LICENSE
+
+2. book-to-skill
+   - NOT redistributed in this repository.
+   - install.sh clones it from https://github.com/virgiliojr94/book-to-skill
+     at the commit pinned in sources.tsv.
+   - MIT, Copyright (c) 2025 virgiliojr94.
+
+3. Workflow skills and ruoyi-vue-pro-dev
+   - Upstream: https://github.com/EastDong314/AI-Project-Workflow-Template
+   - This repository keeps a snapshot of the locally installed versions.
+
+4. obsidian-notes
+   - Original work. Its patterns are inspired by kepano/obsidian-skills;
+     no code from that project is bundled.
+
+5. minfadian
+   - Quotes the text of the PRC Civil Code. Laws and regulations are not
+     protected by copyright (中华人民共和国著作权法 第五条).

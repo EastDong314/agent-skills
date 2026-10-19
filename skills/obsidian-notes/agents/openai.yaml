@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Notes"
+  short_description: "Manage local Obsidian vault notes."
+  default_prompt: "Use $obsidian-notes to create or update an Obsidian note in my local vault."

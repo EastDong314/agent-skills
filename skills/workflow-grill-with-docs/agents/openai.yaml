@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Grill"
+  short_description: "Align a task with docs, code, and project context first."
+  default_prompt: "Use $workflow-grill-with-docs to align this task with the codebase, docs, and project context before writing a plan."

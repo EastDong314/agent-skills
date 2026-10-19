@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Diagnose"
+  short_description: "Diagnose bugs with feedback loops and ranked hypotheses."
+  default_prompt: "Use $workflow-diagnose to investigate this bug with a reproducible feedback loop before planning or fixing."
