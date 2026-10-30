@@ -48,6 +48,30 @@ cd agent-skills
 
 > 从旧布局迁移：如果 `~/.dsh/skills` 里已经有同名 skill，`install.sh` 会检测到重叠并警告；确认后把旧的那份删掉或移走，只保留一处。
 
+## 全局提示词
+
+`skills/` 管「某类任务怎么做」，按需加载；跨项目的长期偏好（语言、review 要求、交付格式）由 agent 每次会话自动加载，skill 管不到这部分。
+
+模板：[`prompts/global-AGENTS.md`](prompts/global-AGENTS.md)，本机 DSH 正在用的版本。
+
+| agent | 全局位置 |
+| --- | --- |
+| DSH | `~/.dsh/AGENTS.md` |
+| Codex | `~/.codex/AGENTS.md` |
+| pi | `~/.pi/agent/AGENTS.md` |
+
+```bash
+mkdir -p ~/.dsh
+cp prompts/global-AGENTS.md ~/.dsh/AGENTS.md
+```
+
+几点约定：
+
+- DSH 同时读 `~/.dsh/AGENTS.md` 与 `~/.agents/AGENTS.md`：内容相同会去重，不同则两份都加载，所以只装一处。
+- 全局提示词在会话首次请求时注入为一条 `user` 消息，不改系统提示词；写完新会话即生效，不需要重启。
+- 项目级 `AGENTS.md` 更具体、优先级更高；全局文件只放跨项目规则，项目专属约定留给项目自己。
+- 模板里带个人路径（vault 位置等），复制后按自己的环境改。
+
 ## 仓库里有什么
 
 ### 本仓库直接维护（`skills/`）
